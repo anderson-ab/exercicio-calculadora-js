@@ -1,0 +1,122 @@
+<!DOCTYPE	html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title> Calculando indicadores antropométricos</title>
+	<link rel="stylesheet" type="text/css" href="_css/style.css"/>
+</head>
+
+<body>
+	<script type="text/javascript" src="_funcoes/calc.js">
+	</script>
+	<div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+			<h1>Calculadora de indicadores antropométricos</h1>
+			</hgroup>
+		</header>
+	
+		<section id="corpo">
+
+		<div id="conteudo-esquerda">
+
+			<fieldset id="sexo">
+				<legend>Sexo:</label></legend>
+		    	<input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label>
+		        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+    	 	</fieldset>
+    	 	<br>
+
+    	 	<table id="dados">
+			<tr>
+				<td>Idade </td> 
+				<td><input type="number" id="idade" min="1" max="999"></td>
+			</tr>
+
+			<tr>
+			<td>Altura (cm) </td>
+			<td><input type="number" id="altura" min="1" max="999"></td>
+			</tr>
+			
+			<tr>
+			<td> Peso (Kg) </td>
+			<td><input type="number" id="peso"  min="1" max="999"></td>
+			</tr>
+			
+			<tr>
+			<td>Cintura (cm) </td>
+			<td><input type="number" id="cintura" min="1" max="999"></td>
+			</tr>
+			
+			<tr>
+			<td>Quadril (cm)  </td>
+			<td><input type="number" id="quadril" min="1" max="999"></td>
+			</tr>
+			
+			<tr>
+			<td>Pescoço (cm) </td>
+			<td><input type="number" id="pescoco" min="1" max="999"></td>
+			</tr>
+			
+			</table>
+			
+			<br>
+			<button id="btn" onClick="Calcular()">Calcular</button>
+		</div>
+
+		<div id="conteudo-direita">
+			<table  id="resultados">
+		    <tr>
+		        <th>IMC  </th>
+		        <th>IAC  </th>
+		        <th>% Gordura <sup>Navy</sup></th>
+
+		    </tr>
+		    <tr>
+		        <td><span id="res-imc"></span></td>
+		        <td><span id="res-iac"></span></td>
+		        <td><span id="res-gc"></span></td>
+
+		    </tr>
+		    <tr>
+		        <td><span id="res-imc-class"></span></td>
+		        <td><span id="res-iac-class"></span></td>
+		        <td><span id="res-gc-class"></span></td>
+
+		    </tr>    
+			</table>
+
+			<table id="resultados">
+			<tr>
+		        <th>% Gordura <sup>IMC</sup></th>
+		        <th>RCQ</th>
+		        <th>BSI</th>
+		    </tr>
+		    <tr>
+		        <td><span id="res-gc2"></span></td>
+		        <td><span id="res-rcq"></span></td>
+		        <td><span id="res-bsi"></span></td>
+		    </tr>
+		    <tr>
+		        <td><span id="res-gc2-class"></span></td>
+		        <td><span id="res-rcq-class"></span></td>
+		        <td><span id="res-bsi-class"></span></td>
+		    </tr>    
+
+			</table>
+		</div>
+		
+
+	</section>
+	
+	<footer id="rodape">
+		IMC = Índice de Massa Corpórea<br>
+		IAC = Índice de Adiposidade Corporal<br>
+		% Gordura <sup>Navy</sup> = Estimativa de percentual de gordura corporal pela equação da US Navy<br>
+		% Gordura <sup>IMC</sup> = Estimativa de percentual de gordura corporal com base no IMC<br>
+		RCQ = Relação cintura-quadril<br>
+		BSI = Body Shape Index
+	</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@charset "UTF-8"
+	h1 {
+	    font-family: calibri-light;
+		font-size: 20;
+		color: black;
+		text-shadow:1px 1px 2px black;
+		position: center;
+		}
+		
+	body {
+		margin: 0px;
+	    padding: 0px;
+	    background-image: url("../_imagens/fundo.png");
+		background-size: 100%;
+		border-radius: 7px;
+		font-family: calibri-light;
+		}
+	div#interface {
+		width: 1075px;
+		background-color: white;
+		margin: 25px auto 25px 125px;
+		box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+		padding: 15px;
+		border-radius: 7px;
+			}
+
+	header#cabecalho {
+		height: 80px;
+		background-color: #fff;
+		text-align: center;
+		border:1px solid #90ee90;
+		border-radius: 10px;
+	}
+	footer#rodape {
+		margin-top: 15px;
+		font-size: 9pt;
+	}
+	div{
+		display: inline-block;
+		background-color: #fff;
+
+	}
+	div#conteudo-esquerda{
+		position: left;
+		padding: 15px;
+		border-radius: 10px;
+		width: 400px;
+		border:1px solid #90ee90;
+		}
+		fieldset{
+		border-radius: 5px;
+	}
+	button {
+		background-color: #373737;
+		font-size: 12pt;
+		color: white;
+		border-radius: 5px;
+		border:1px solid #90ee90;
+		padding: 6px;
+		margin-left: 150px;
+		cursor: pointer;
+	}
+	div#conteudo-direita{
+		position: top;
+		margin-left: 10px;
+		margin-top: 5px;
+		border-radius: 10px;
+		width: 625px;
+		height: 280px;
+		}
+	table#resultados{
+		width: 100%;
+		margin-top: 20px;
+  		margin-bottom: 1.5em;
+  		border-spacing: 0;
+  		text-align: center;
+  		font-size: 15px;
+	}
+	table#resultados th{
+		background-color: #373737;
+      	border: 1px solid #90ee90;
+      	font-weight: normal;
+      	text-align: center;
+      	color: white;
+      	border-radius: 5px;
+      	width: 100px;
+      	padding: 3px;
+	}
+	table#resultados tr{
+       border: 1px solid #90ee90;
+       font-weight: normal;
+       text-align: center;
+       border-radius: 5px;
+       width: 100px;
+       padding: 5px;
+	}
+	
+	
